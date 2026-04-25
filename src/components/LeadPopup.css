@@ -1,0 +1,84 @@
+/* OVERLAY */
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.65);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* BOX */
+.popup-box {
+  width: 360px;
+  padding: 25px;
+  border-radius: 20px;
+
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(20px);
+
+  color: white;
+  text-align: center;
+  position: relative;
+
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+
+  animation: scaleIn 0.4s ease;
+}
+
+/* CLOSE */
+.popup-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+}
+
+/* FORM */
+.popup-form {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.popup-form input {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+}
+
+.popup-form button {
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  background: #00c9a7;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* WHATSAPP */
+.whatsapp-btn {
+  margin-top: 10px;
+  padding: 10px;
+  width: 100%;
+  border-radius: 20px;
+  border: none;
+  background: #25D366;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* ANIMATION */
+@keyframes scaleIn {
+  from {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

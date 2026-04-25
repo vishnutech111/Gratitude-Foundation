@@ -1,0 +1,54 @@
+/* CARD */
+.university-card {
+  width: 300px;
+  border-radius: 15px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  transition: 0.3s;
+}
+
+/* IMAGE */
+.card-image img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* CONTENT */
+.card-content {
+  padding: 15px;
+  text-align: center;
+}
+
+.card-content h3 {
+  margin: 10px 0;
+  color: #080b0c;
+}
+
+.location {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 14px;
+  color: #212121;
+  margin-bottom: 15px;
+}
+
+/* BUTTON */
+.apply-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(45deg, #00c9a7, #0077b6);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.apply-btn:hover {
+  box-shadow: 0 0 10px #00c9a7;
+}

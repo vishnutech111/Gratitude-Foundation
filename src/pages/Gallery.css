@@ -1,0 +1,156 @@
+.gallery-page {
+  font-family: "Poppins", sans-serif;
+}
+
+/* ===== CAROUSEL ===== */
+.vertical-carousel {
+  position: relative;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.v-slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+
+  transform: translateY(100%) scale(1.05);
+  opacity: 0;
+  transition: 1s ease-in-out;
+}
+
+.v-slide.active {
+  transform: translateY(0%) scale(1);
+  opacity: 1;
+}
+
+/* Overlay */
+.v-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,0.6);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: #fff;
+  text-align: center;
+}
+
+.v-overlay h1 {
+  font-size: 3rem;
+}
+
+.v-overlay p {
+  margin-top: 10px;
+}
+
+/* ===== SECTION ===== */
+.gallery-section {
+  padding: 50px 15px;
+  text-align: center;
+  background: #f5f7fa;
+}
+
+.gallery-section h2 {
+  margin-bottom: 25px;
+}
+
+/* GRID */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+/* CARD */
+.gallery-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+/* IMAGE */
+.gallery-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: 0.4s;
+}
+
+.gallery-card:hover img {
+  transform: scale(1.1);
+}
+
+/* HOVER OVERLAY */
+.hover-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.gallery-card:hover .hover-overlay {
+  opacity: 1;
+}
+
+.hover-overlay span {
+  color: white;
+  font-size: 18px;
+  border: 1px solid white;
+  padding: 8px 15px;
+  border-radius: 6px;
+}
+
+/* LIGHTBOX */
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.9);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 10px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .vertical-carousel {
+    height: 60vh;
+  }
+
+  .v-overlay h1 {
+    font-size: 2rem;
+  }
+
+  .gallery-card img {
+    height: 180px;
+  }
+}

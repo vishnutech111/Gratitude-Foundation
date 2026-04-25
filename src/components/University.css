@@ -1,0 +1,64 @@
+/* PAGE */
+.details-page {
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 20px;
+  color: rgb(7, 7, 7);
+}
+
+/* HEADINGS */
+.details-page h1 {
+  color: #00c9a7;
+  margin-bottom: 20px;
+}
+
+.details-page h3 {
+  margin-top: 30px;
+  color: #00c9a7;
+}
+
+/* LIST */
+.details-page ul {
+  margin-left: 20px;
+  line-height: 1.8;
+}
+
+/* COLLEGE LIST */
+.college-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* CARD */
+.college-card {
+  background: rgba(255,255,255,0.05);
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.1);
+  transition: 0.3s;
+}
+
+.college-card:hover {
+  transform: translateY(-5px);
+  background: rgba(0,201,167,0.2);
+}
+
+/* BUTTON */
+.apply-btn {
+  margin-top: 30px;
+  padding: 12px 25px;
+  background: #00c9a7;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .college-list {
+    grid-template-columns: 1fr;
+  }
+}

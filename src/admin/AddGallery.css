@@ -1,0 +1,96 @@
+/* ===== CONTAINER ===== */
+.addgallery-container {
+  min-height: 100vh;
+  background: #f8fafc; /* light background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* ===== FORM ===== */
+.addgallery-form {
+  width: 420px;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  /* Soft shadow */
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+
+  border: 1px solid #e5e7eb;
+}
+
+/* ===== TITLE (optional add in JSX) ===== */
+.addgallery-form h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #111827;
+}
+
+/* ===== INPUT ===== */
+.addgallery-form input {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  outline: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+/* INPUT FOCUS */
+.addgallery-form input:focus {
+  border-color: #111827;
+  box-shadow: 0 0 0 2px rgba(0,0,0,0.05);
+}
+
+/* ===== BUTTON ===== */
+.addgallery-form button {
+  padding: 12px;
+  border: none;
+  background: #111827; /* black button */
+  color: white;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+/* HOVER */
+.addgallery-form button:hover {
+  background: #000;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* ===== PREVIEW ===== */
+.preview-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .addgallery-form {
+    width: 90%;
+    padding: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .addgallery-form {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .preview-img {
+    height: 180px;
+  }
+}
