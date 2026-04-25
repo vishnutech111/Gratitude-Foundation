@@ -49,22 +49,20 @@ import "./Home.css";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import Counter from "../components/Counter";
-// import h1 from "../assets/Dhanalakshmi.png";
-// import h2 from "../assets/MGR.png";
-// import h3 from "../assets/RGU.png";
+
 import home from "../assets/home3.png";
 import home1 from "../assets/home2.png";
 import home2 from "../assets/home1.png";
 import {
   FaUserGraduate,
-  FaUniversity,
+  
   FaMoneyBill,
-  FaPassport,
+ 
   FaBriefcase,
   FaGlobe,
-  FaChartLine
+  
 } from "react-icons/fa";
-import UniversityCard from "../components/UniversityCard";
+
 import {  AnimatePresence } from "framer-motion";
 
 const images = [

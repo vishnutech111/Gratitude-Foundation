@@ -73,8 +73,8 @@ import "./Services.css";
 // import h1 from "../assets/home1";
 // import h2 from "../assets/homepage";
 // import h3 from "../assets/home2";
-import UniversityCard from "../components/UniversityCard";
-import UniversityTable from "../components/UniversityTable";
+// import UniversityCard from "../components/UniversityCard";
+// import UniversityTable from "../components/UniversityTable";
 const slides = [
   {
     image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f",
